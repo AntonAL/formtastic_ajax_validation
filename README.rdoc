@@ -9,6 +9,12 @@ Simply add FormtasticAjaxValidation to your Gemfile and bundle it up:
 
 == Usage
 
+Require javascripts assets:
+  = require formtastic_ajax_validation
+
+Require stylesheets assets:
+  = require formtastic_ajax_validation
+
 Having semantic form, like this:
   = semantic_form_for User.new, :remote => true do |f|
     = f.inputs do
