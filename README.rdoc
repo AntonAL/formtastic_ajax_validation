@@ -1,0 +1,24 @@
+= AjaxValidationsForFormtastic
+
+Marks invalid fields of semantic form, according to validation errors, received from server in JSON format.
+
+== Installation
+
+Simply add AjaxValidationsForFormtastic to your Gemfile and bundle it up:
+  gem "formtastic_ajax_validations"
+
+== Usage
+
+Having semantic form, like this:
+  = semantic_form_for User.new, :remote => true do |f|
+  = f.inputs do
+    = f.input :name
+    = f.input :email
+
+Bind validation to it:
+  AjaxValidationForFormtastic $("#new_user"), "user", ["name", "email"]
+Where "user" is a name of a model, and ["name", "email"] are names of fields, that should reflect validation state.
+
+== Copyright
+
+Copyright © 2013 Anton Aljoshim, Web Deli Corporation. See LICENSE for details.
