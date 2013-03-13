@@ -6,7 +6,7 @@ require "formtastic_ajax_validation/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "formtastic_ajax_validation"
-  s.version     = AjaxValidationsForFormtastic::VERSION
+  s.version     = FormtasticAjaxValidation::VERSION
   s.authors     = ["Anton Aljoshin"]
   s.email       = ["Anton_Aleschin@mail.ru", "contact@web-deli.ru"]
   s.homepage    = "http://web-deli.ru"
