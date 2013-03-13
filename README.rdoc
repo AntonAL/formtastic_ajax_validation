@@ -11,12 +11,12 @@ Simply add FormtasticAjaxValidation to your Gemfile and bundle it up:
 
 Having semantic form, like this:
   = semantic_form_for User.new, :remote => true do |f|
-  = f.inputs do
-    = f.input :name
-    = f.input :email
+    = f.inputs do
+      = f.input :name
+      = f.input :email
 
-Bind validation to it:
-  AjaxValidationForFormtastic $("#new_user"), "user", ["name", "email"]
+Bind validation to it via CoffeeScript:
+  FormtasticAjaxValidation $("#new_user"), "user", ["name", "email"]
 Where "user" is a name of a model, and ["name", "email"] are names of fields, that should reflect validation state.
 
 == Copyright
