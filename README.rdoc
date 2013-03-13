@@ -5,7 +5,7 @@ Marks invalid fields of semantic form, according to validation errors, received 
 == Installation
 
 Simply add AjaxValidationsForFormtastic to your Gemfile and bundle it up:
-  gem "formtastic_ajax_validations"
+  gem 'formtastic_ajax_validations'
 
 == Usage
 
