@@ -13,8 +13,8 @@ Gem::Specification.new do |s|
   s.summary     = "Marks invalid fields of semantic form according to validation errors, received from server."
   s.description = "Marks invalid fields of semantic form according to validation errors, received from server."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
+  s.files       = `git ls-files`.split("\n")
+  s.test_files  = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.12"
 end
